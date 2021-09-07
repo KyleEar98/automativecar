@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fff;
+    font-family: "Roboto", san-serif;
+    margin: 0;
+}
+
+header {
+    background-image: url("car.jpg");
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: calc(100vh - 102px);
+}
+header .content{
+    font-size: 1.5rem;
+    /* root element if root element is 16px then 1rm=16px */
+    margin: auto; 
+    /* margin auto horizontally centers in its container */
+}
+
+.container{
+    margin: 0 auto;
+    width: 1000px;
+    max-width: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+
+nav .logo{
+    font-size: 2rem;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+
+nav li a {
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.selected{
+    font-weight: bold;
+}
+.highlight{
+    background-color: #00c2ff;
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+
+}
+
+.content{
+    margin: auto;
+}
+
+.content h1{
+    color: #00c2ff;
+    margin-bottom: 0;
+}
+
+footer{
+    background-color: black;
+    color: #ffff;
+    padding: 1rem;
+}
+
+footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+}
+
+footer p{
+    margin: 0;
+}
+footer strong {
+    color: #00c2ff;
+}
+
+@media screen and (max-width: 700px){
+    .content{
+        font: 1.4rem;
+        margin: 2rem auto 0;
+    }
+    nav ul {
+        flex-direction: column;
+        align-self: flex-end;
+    }
+    nav{
+        flex-direction: column;
+    }
+    nav .highlight{
+        display: none;
+    }
+    footer ul{
+        flex-direction: column;
+    }
+    footer li{
+        margin: 1rem;
+        text-align: center;
+    }
+}
